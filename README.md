@@ -1,5 +1,7 @@
 # rc-crud
-Abstrações da API, Controller, Testes e helpers uteis ao desenvolvimento do restcraft. 
+Abstrações da API, Controller, Testes e helpers uteis ao desenvolvimento do restcraft.
+  
+![GitHub package.json version](https://img.shields.io/github/package-json/v/acelera/rc-crud) ![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/rc-crud) ![GitHub Repo stars](https://img.shields.io/github/stars/acelera/rc-crud) ![GitHub issues](https://img.shields.io/github/issues/acelera/rc-crud) ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/acelera/rc-crud)  
 
 ## Comece agora:
 Para clonar o projeto e fazer uma alteração ou nova implementação:  
