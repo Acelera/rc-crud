@@ -1,0 +1,17 @@
+{
+	"env": {
+		"development": {
+			"presets": [
+				[
+					"@babel/preset-env",
+					{
+						"targets": {
+							"node": 12
+						}
+					}
+				]
+			]
+		}
+	},
+	"sourceMaps": true
+}

@@ -1,6 +1,7 @@
-# DIST
-build/
+# BUILD
 dist/
+module/
+lib/
 
 # VENDOR
 node_modules/

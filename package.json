@@ -1,9 +1,16 @@
 {
-  "name": "@restcraft/crud",
+  "name": "rc-crud",
   "version": "0.1.0",
   "description": "Abstrações da API, Controller, Testes e helpers uteis ao desenvolvimento do restcraft.",
-  "main": "src/index.js",
+  "author": "Marcus Vinicius Mendes Goncalves <marcus@acelera.cloud>",
+  "license": "MIT",
+  "main": "./dist/index.js",
   "scripts": {
+    "start": "nodemon -w src -x \"babel-node src --presets @babel/env\"",
+    "build-node": "babel ./src --presets @babel/env --out-dir ./dist --source-maps --copy-files",
+    "build": "yarn clear && yarn run build-node",
+    "clear": "rimraf lib",
+    "lint": "./node_modules/.bin/eslint src/*.js",
     "test": "yarn test"
   },
   "repository": {
@@ -16,10 +23,32 @@
     "restcraft",
     "mongoose"
   ],
-  "author": "Marcus Vinicius Mendes Goncalves <marcus@acelera.cloud>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/acelera/rc-crud/issues"
   },
-  "homepage": "https://github.com/acelera/rc-crud#readme"
+  "homepage": "https://github.com/acelera/rc-crud#readme",
+  "devDependencies": {
+    "@babel/cli": "7.11.6",
+    "@babel/core": "7.11.6",
+    "@babel/node": "7.10.5",
+    "@babel/preset-env": "7.11.5",
+    "faker": "5.1.0",
+    "nodemon": "2.0.4",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "af-helpers": "1.6.0",
+    "af-mongoose-monitor": "1.1.0",
+    "af-super-console": "1.1.1",
+    "api-query-params": "^5.0.0",
+    "auto-bind": "^4.0.0",
+    "colors": "^1.4.0",
+    "express": "4.17.1",
+    "http-build-query": "^0.7.0",
+    "lodash": "4.17.20",
+    "moment": "2.29.0",
+    "mongoose": "5.10.7",
+    "node-cron": "2.0.3",
+    "rc-console": "^0.1.1"
+  }
 }
