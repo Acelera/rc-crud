@@ -1,0 +1,10 @@
+# DIST
+build/
+dist/
+
+# VENDOR
+node_modules/
+
+# IDE
+.idea/
+.vscode/
