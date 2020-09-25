@@ -1,0 +1,25 @@
+{
+  "name": "@restcraft/crud",
+  "version": "0.1.0",
+  "description": "Abstrações da API, Controller, Testes e helpers uteis ao desenvolvimento do restcraft.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acelera/rc-crud.git"
+  },
+  "keywords": [
+    "crud",
+    "core",
+    "restcraft",
+    "mongoose"
+  ],
+  "author": "Marcus Vinicius Mendes Goncalves <marcus@acelera.cloud>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acelera/rc-crud/issues"
+  },
+  "homepage": "https://github.com/acelera/rc-crud#readme"
+}
