@@ -217,31 +217,20 @@ class Controller {
    */
   async removeRel ({ _id }) {
     try {
-      const keys = Object.keys(this.rel);
-      console.log(keys);
+      const keys = Object.keys(this.rel) || [];
+      keys.length && keys.map(async (key) => {
+        const findBy = get(this, `rel.${key}.findBy.prop`, false);
+        if (!findBy) throw new Error(`Relacionamento sem findBy.prop. Key: [${key}]`);
 
-      // eslint-disable-next-line no-plusplus
-      for (let i = 0; i < keys.length; i++) {
-        // Carrega o nome da propriedade que guarda a chave do pai no filho,
-        // e carrega onde esta o valor da propriedade no pai.
-        const prop = get(this.rel, `[${keys[i]}].findBy.prop`);
-        // Carrega o controller.
-        const controller = get(this.rel, `[${keys[i]}].Model`);
-        // Se carregou a propriedade, o valor, e existe nos parametros a propriedade
-        // de relacionamento a ser inserido.
-        if (prop && controller) {
-          // Monta o filtro dinamico e carrega os registros vinculados.
-          const findBy = {};
-          findBy[prop] = _id;
+        const controller = get(this, `rel.${key}.controller`);
+        if (!controller) throw new Error(`Relacionamento sem .controller Key: [${key}]`);
 
-          // eslint-disable-next-line no-await-in-loop
-          const findResult = await controller.find(findBy);
-          await Promise.all(findResult.map(async (registryToDel) => {
-            // eslint-disable-next-line no-underscore-dangle
-            await controller.remove(registryToDel._id);
-          }));
-        }
-      }
+        const findResult = await controller.find({ [findBy]: _id });
+        await Promise.all(findResult.map(async (registryToDel) => {
+          // eslint-disable-next-line no-underscore-dangle
+          await controller.remove(registryToDel._id);
+        }));
+      });
     } catch ({ message }) {
       Console.err(message).newLine();
       throw new Error(message);
