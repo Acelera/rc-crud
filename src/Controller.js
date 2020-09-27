@@ -290,7 +290,7 @@ class Controller {
    */
   async put (selector, modifier = {}, options = {}) {
     try {
-      const beforePut = this.beforePut ? this.beforePut : (a) => a;
+      const beforePut = typeof this.beforePut === 'function' ? this.beforePut : (a) => a;
       const original = beforePut(cloneDeep(modifier));
 
       // eslint-disable-next-line no-param-reassign
@@ -309,11 +309,14 @@ class Controller {
         ...options,
         runValidators: true,
       });
+      console.log('update', update);
+      console.log('this.rel', this.rel);
       if (update && this.rel) {
-        await this.putRel(selector, original);
+        console.log('this.rel', this.rel);
+        console.log(await this.putRel(selector, original));
       }
 
-      const afterPut = this.afterPut ? this.afterPut : (b) => b;
+      const afterPut = typeof this.afterPut === 'function' ? this.afterPut : (a) => a;
       return afterPut(update);
     } catch ({ message }) {
       Console.err(message).newLine();

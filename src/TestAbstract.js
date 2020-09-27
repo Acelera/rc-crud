@@ -1,4 +1,3 @@
-/* globals describe, it */
 const { Dates } = require('af-helpers');
 
 const assert = require('assert');
@@ -10,6 +9,7 @@ class TestAbstract {
     Controller,
     propMutable,
     propMetadata,
+    propRequired,
     transformPropUpdate = (d) => d,
     checkId = (id) => !!id,
     fakeGen = () => ({}),
@@ -51,7 +51,7 @@ class TestAbstract {
             try {
               // sem a descricao que é obrigatoria
               const fakeData = this.fakeGen();
-              delete fakeData.descricao;
+              delete fakeData[propRequired];
               await Controller.create(fakeData);
             } catch ({ message }) {
               assert.notEqual(message.indexOf('validation failed'), -1);
