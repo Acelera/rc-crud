@@ -365,11 +365,8 @@ class Controller {
           runValidators: true,
         },
       );
-      console.log('update', update);
-      console.log('this.rel', this.rel);
-      if (update && this.rel) {
-        console.log('this.rel', this.rel);
-        console.log(await this.putRel(selector, original));
+      if (update.ok && this.rel) {
+        await this.putRel(selector, original);
       }
 
       const afterPut = typeof this.afterPut === 'function'
@@ -396,7 +393,7 @@ class Controller {
       keys.length && keys.map(async (key) => {
         const whenPutKeep = get(
           this,
-          `.rel[${keys[i]}].whenPut.keep`,
+          `.rel.${key}.whenPut.keep`,
           false,
         );
         if (whenPutKeep !== true) {
@@ -410,26 +407,26 @@ class Controller {
           if (!controller) throw new Error(
             `Relacionamento sem .controller Key: [${key}]`);
 
-          const relData = get(doc, `$set[${keys[i]}]`);
+          const relData = get(doc, `$set.${key}`, []);
           const selectorRel = { [findBy]: selector._id };
           if (relData) {
             await controller
               .find(selectorRel)
-              .then(rows => rows
-                .map(async ({ _id }) => await controller.remove(_id)),
+              .then(rows => rows.map(({ _id }) => controller.Model.deleteOne(
+                { _id }).catch(
+                err => console.log('removeRels.err', err)),
+                ),
               )
-              .then(promises => Promise.all(promises))
+              .then(promises => Promise
+                .all(promises.filter(val => !!val)),
+              )
               .then(() => {
                 // insere os relacionamentos dependentes
-                if (relData && relData.length > 0) {
-                  relData.forEach(
-                    console.log(
-                      async ({ _id, ...others }) => await controller
-                        .create({ ...others, ...selectorRel }),
-                    ),
-                  );
-                }
-              });
+                relData.forEach(
+                  async ({ _id, ...others }) => await controller.create({ ...others, ...selectorRel })
+                );
+              })
+              .catch(err => console.log('removeRels.err', err));
           }
         }
       });
