@@ -1,3 +1,4 @@
+![Demo](https://miro.medium.com/max/300/1*6DL9gdn0hFDiMrK2Fw7E1g.png)
 # rc-crud
 Abstrações da API, Controller, Testes e helpers uteis ao desenvolvimento do restcraft.
   
