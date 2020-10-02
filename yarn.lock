@@ -909,10 +909,10 @@ accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
-af-helpers@1.6.1:
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/af-helpers/-/af-helpers-1.6.1.tgz#2f7486075c8cd734f32a30b130f078115b2f4ab9"
-  integrity sha512-KRSIhrIgkLtdXXAXjEI43M1HXIZi2fq2xXKVgnh3h56sERw4wTrw6flyrf9ZtrOZS9hPolXw0I7QgZNVqJaakg==
+af-helpers@1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/af-helpers/-/af-helpers-1.7.1.tgz#0d6bd912f5db93d1a2f8db67f71128568c76d969"
+  integrity sha512-T3bnEuQtqu4VTPt0yzLEidR0qJFovax90ZaQYyOnpMepedH6SkEtUpf+i/gc4FSDPj6jYcgPVycUHqEbGC7XLQ==
   dependencies:
     "@fnando/cnpj" "^1.0.2"
     "@fnando/cpf" "^1.0.2"
