@@ -1,6 +1,6 @@
 {
   "name": "rc-crud",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Abstrações da API, Controller, Testes e helpers uteis ao desenvolvimento do restcraft.",
   "author": "Marcus Vinicius Mendes Goncalves <marcus@acelera.cloud>",
   "license": "MIT",
