@@ -40,7 +40,7 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "af-helpers": "1.6.0",
+    "af-helpers": "1.7.1",
     "af-mongoose-monitor": "1.1.0",
     "af-super-console": "1.1.1",
     "api-query-params": "^5.0.0",
@@ -50,8 +50,8 @@
     "http-build-query": "^0.7.0",
     "lodash": "4.17.20",
     "moment": "2.29.0",
-    "mongoose": "5.10.7",
+    "mongoose": "5.10.8",
     "node-cron": "2.0.3",
-    "rc-console": "^0.1.1"
+    "rc-console": "^0.4.0"
   }
 }

@@ -909,10 +909,10 @@ accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
-af-helpers@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/af-helpers/-/af-helpers-1.6.0.tgz#41d8503d99cd06cc92716a786193a4f23bd5218f"
-  integrity sha512-ghMTSOlhZ9UL9HTt0MSByvUJIISQ7Nm5omnXLl6h33vcFfo0VzAGCMx/oY9+ItupcPYIZoeuXDyW7Tv1ASX9PQ==
+af-helpers@1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/af-helpers/-/af-helpers-1.7.1.tgz#0d6bd912f5db93d1a2f8db67f71128568c76d969"
+  integrity sha512-T3bnEuQtqu4VTPt0yzLEidR0qJFovax90ZaQYyOnpMepedH6SkEtUpf+i/gc4FSDPj6jYcgPVycUHqEbGC7XLQ==
   dependencies:
     "@fnando/cnpj" "^1.0.2"
     "@fnando/cpf" "^1.0.2"
@@ -1349,7 +1349,7 @@ color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-colors@^1.4.0:
+colors@1.4.0, colors@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
@@ -2549,10 +2549,10 @@ mongoose-legacy-pluralize@1.0.2:
   resolved "https://registry.yarnpkg.com/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz#3ba9f91fa507b5186d399fb40854bff18fb563e4"
   integrity sha512-Yo/7qQU4/EyIS8YDFSeenIvXxZN+ld7YdV9LqFVQJzTLye8unujAWPZ4NWKfFA+RNjh+wvTWKY9Z3E5XM6ZZiQ==
 
-mongoose@5.10.7:
-  version "5.10.7"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.10.7.tgz#5590037f4d9078f4d4edac5c77f27b53829b1c94"
-  integrity sha512-oiofFrD4I5p3PhJXn49QyrU1nX5CY01qhPkfMMrXYPhkfGLEJVwFVO+0PsCxD91A2kQP+d/iFyk5U8e86KI8eQ==
+mongoose@5.10.8:
+  version "5.10.8"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.10.8.tgz#e305dd5972c4d6b78418bd388342592ca5d8d633"
+  integrity sha512-hbpFhOU6rWkWPkekUeSJxqWwzsjVQZ9xPg4WmWA1HJ8YDvjyNye1xbp82fw67BpnyvcjHxyU3/YhujsOCx55yw==
   dependencies:
     bson "^1.1.4"
     kareem "2.3.1"
@@ -2931,12 +2931,12 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-rc-console@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/rc-console/-/rc-console-0.1.1.tgz#bea44d3130a21195f74e67dea2282c7075a55236"
-  integrity sha512-Tcs9JLzwjYTd1upRC18MbreawVkYF8r9H+pvWcROF8EGKWMharqzGVP9eCMZp8DPqu8F22JZSDZwBFI8Jp5tGw==
+rc-console@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/rc-console/-/rc-console-0.4.0.tgz#46e5ded6d4cdd0ab3a2c03f111571c688712a2cd"
+  integrity sha512-7g8dkULYJo1oIBtQ/UbAueGSUwCDta2chAQ9UHZvWQjFsZyIYQ088NnSwQTROPNyg+MZm9zrBBJUGQXUJYRg4Q==
   dependencies:
-    colors "^1.4.0"
+    colors "1.4.0"
     moment "2.29.0"
 
 rc@^1.2.8:
