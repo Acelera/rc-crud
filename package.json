@@ -1,6 +1,6 @@
 {
   "name": "rc-crud",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Abstrações da API, Controller, Testes e helpers uteis ao desenvolvimento do restcraft.",
   "author": "Marcus Vinicius Mendes Goncalves <marcus@acelera.cloud>",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "build-node": "babel ./src --presets @babel/env --out-dir ./dist --source-maps --copy-files",
     "build": "yarn clear && yarn run build-node",
     "deploy": "yarn build && yarn publish",
-    "clear": "rimraf lib",
+    "clear": "rimraf dist",
     "lint": "./node_modules/.bin/eslint src/*.js",
     "test": "yarn test"
   },
@@ -32,6 +32,7 @@
     "@babel/cli": "7.11.6",
     "@babel/core": "7.11.6",
     "@babel/node": "7.10.5",
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
     "@babel/preset-env": "7.11.5",
     "babel-plugin-add-module-exports": "^1.0.4",
     "chai": "4.2.0",
