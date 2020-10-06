@@ -10,7 +10,10 @@
 						}
 					}
 				]
-			]
+			],
+      "plugins": [
+        "add-module-exports"
+      ]
 		}
 	},
 	"sourceMaps": true
