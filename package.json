@@ -50,6 +50,6 @@
     "moment": "2.29.0",
     "mongoose": "5.10.8",
     "node-cron": "2.0.3",
-    "rc-console": "^0.4.0"
+    "rc-console": "^0.6.4"
   }
 }
