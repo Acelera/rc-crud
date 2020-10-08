@@ -2931,11 +2931,12 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-rc-console@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/rc-console/-/rc-console-0.4.0.tgz#46e5ded6d4cdd0ab3a2c03f111571c688712a2cd"
-  integrity sha512-7g8dkULYJo1oIBtQ/UbAueGSUwCDta2chAQ9UHZvWQjFsZyIYQ088NnSwQTROPNyg+MZm9zrBBJUGQXUJYRg4Q==
+rc-console@^0.6.5:
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/rc-console/-/rc-console-0.6.5.tgz#cf915244329b2942776fd7672b52e8f300717a02"
+  integrity sha512-+e2o0kJs2KAYTm0/uwGtGGIAFatVqsFpAd40EI/LrEmHSLMDS8CqTxBYo6kAk4gS92M7sYMjC3t942N+WtEbHA==
   dependencies:
+    auto-bind "^4.0.0"
     colors "1.4.0"
     moment "2.29.0"
 
