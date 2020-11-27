@@ -1,19 +1,16 @@
 {
-  "env": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "esmodules": true
-          }
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "node": 12
         }
-      ]
-    ],
-    "plugins": [
-      "add-module-exports",
-      "@babel/plugin-proposal-export-default-from"
+      }
     ]
-  },
-  "sourceMaps": "both"
+  ],
+  "plugins": [
+    "add-module-exports",
+    "@babel/plugin-proposal-export-default-from"
+  ]
 }
