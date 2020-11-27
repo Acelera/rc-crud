@@ -29,15 +29,15 @@
   },
   "homepage": "https://github.com/acelera/rc-crud#readme",
   "devDependencies": {
-    "@babel/cli": "7.11.6",
-    "@babel/core": "7.11.6",
+    "@babel/cli": "7.12.8",
+    "@babel/core": "7.12.9",
     "@babel/node": "7.10.5",
     "@babel/plugin-proposal-export-default-from": "^7.10.4",
-    "@babel/preset-env": "7.11.5",
     "babel-plugin-add-module-exports": "^1.0.4",
+    "@babel/preset-env": "7.12.7",
     "chai": "4.2.0",
     "faker": "5.1.0",
-    "nodemon": "2.0.4",
+    "nodemon": "2.0.6",
     "rimraf": "^3.0.2"
   },
   "dependencies": {
@@ -50,9 +50,9 @@
     "express": "4.17.1",
     "http-build-query": "^0.7.0",
     "lodash": "4.17.20",
-    "moment": "2.29.0",
-    "mongoose": "5.10.8",
+    "moment": "2.29.1",
+    "mongoose": "5.10.16",
     "node-cron": "2.0.3",
-    "rc-console": "^0.4.0"
+    "rc-console": "^0.6.5"
   }
 }
