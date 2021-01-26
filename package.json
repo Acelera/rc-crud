@@ -36,7 +36,7 @@
     "@babel/preset-env": "7.12.11",
     "babel-plugin-add-module-exports": "^1.0.4",
     "chai": "4.2.0",
-    "faker": "5.1.0",
+    "faker": "5.2.0",
     "nodemon": "2.0.7",
     "rimraf": "^3.0.2"
   },
