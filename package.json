@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/acelera/rc-crud#readme",
   "devDependencies": {
-    "@babel/core": "7.12.16",
+    "@babel/core": "7.13.13",
     "@babel/cli": "7.12.16",
     "@babel/node": "7.12.16",
     "@babel/plugin-proposal-export-default-from": "^7.10.4",
