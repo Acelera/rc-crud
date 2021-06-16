@@ -49,9 +49,9 @@
     "colors": "^1.4.0",
     "express": "4.17.1",
     "http-build-query": "^0.7.0",
-    "lodash": "4.17.20",
+    "lodash": "4.17.21",
     "moment": "2.29.1",
-    "mongoose": "5.11.16",
+    "mongoose": "5.12.14",
     "node-cron": "2.0.3",
     "rc-console": "^0.6.5"
   }
