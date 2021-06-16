@@ -36,7 +36,7 @@
     "@babel/preset-env": "7.12.16",
     "babel-plugin-add-module-exports": "^1.0.4",
     "chai": "4.3.0",
-    "faker": "5.4.0",
+    "faker": "5.5.3",
     "nodemon": "2.0.7",
     "rimraf": "^3.0.2"
   },
@@ -51,7 +51,7 @@
     "http-build-query": "^0.7.0",
     "lodash": "4.17.20",
     "moment": "2.29.1",
-    "mongoose": "5.11.16",
+    "mongoose": "5.12.14",
     "node-cron": "2.0.3",
     "rc-console": "^0.6.5"
   }
