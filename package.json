@@ -52,7 +52,7 @@
     "lodash": "4.17.21",
     "moment": "2.29.1",
     "mongoose": "5.12.14",
-    "node-cron": "2.0.3",
+    "node-cron": "3.0.0",
     "rc-console": "^0.6.5"
   }
 }
