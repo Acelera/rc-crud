@@ -51,7 +51,7 @@
     "http-build-query": "^0.7.0",
     "lodash": "4.17.21",
     "moment": "2.29.1",
-    "mongoose": "5.13.1",
+    "mongoose": "5.13.2",
     "node-cron": "3.0.0",
     "rc-console": "^0.6.5"
   }
